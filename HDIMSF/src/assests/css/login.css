@@ -1,0 +1,128 @@
+.loginpage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/poo.jpg);
+    background-size: contain;
+    position: relative;
+    /* background-repeat: no-repeat; */
+}
+
+.loginpage form {
+    height: calc(100vh - 400px);
+    padding: 200px;
+    width: 30%;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.loginpage form h1{
+    width: 70%;
+    color: #0c0c0c;
+    font-size: 40px;
+    margin: 2px 0;
+}
+
+.loginpage form p{
+    width: 70%;
+    color: #a1a1a1;
+    font-size: 16px;
+    margin: 2px 0;
+}
+
+.loginpage form label{
+    font-size: 20px;
+    margin: 20px 0;
+    position: relative;
+    width: 70%;
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: end;    
+    align-items: center;
+    border-radius: 8px;
+}
+
+.loginpage form label button {
+    all: unset;
+    width: 15%;
+    min-width: 40px;
+    height: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.loginpage form label button:hover {
+    background-color: #000;
+}
+
+.loginpage form label span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #0c0c0c;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.loginpage form label input:focus ~ span,
+.loginpage form label input:user-valid ~ span{
+    top: -15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.loginpage form label input:user-invalid ~ span{
+    top: -15px;
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.loginpage form label input{
+    all: unset;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.loginpage form label:has(input:focus){
+    border-radius: 8px;
+}
+
+.loginpage form button {
+    all: unset;
+    width: calc(70% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 900;
+    text-align:center ;
+    background-color: #333333;
+    color: #ffffff  ;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.loginpage form button:hover {
+    background-color: #0c0c0c;
+}
